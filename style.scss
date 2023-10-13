@@ -1,0 +1,26 @@
+@import "base/reset";
+@import "base/colors";
+@import "abstracts/mixins";
+
+.flex-container {
+  @include flexy;
+  background: linear-gradient($grad-1, $grad-2);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  .div-1 {
+    @include divs;
+    background-color: $color-1;
+    @include drop(1);
+  }
+  .div-2 {
+    @include divs;
+    background-color: $color-2;
+    @include drop(2);
+  }
+  .div-3 {
+    @include divs;
+    background-color: $color-3;
+    @include drop(3);
+  }
+}
+
